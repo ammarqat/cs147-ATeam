@@ -398,16 +398,29 @@ fieldset[disabled] .btn-success.active {
   z-index: 2;
 }
 
+.portfolio-modal .vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+}
+.portfolio-modal .vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+}
+
 .portfolio-modal .modal-content {
     border-radius: 0;
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
     border: none;
-    overflow-y: auto;    
-    overflow-x: auto;
-    width: 100%;
     text-align: center;
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:100%;
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
 }
 
 .portfolio-modal .modal-content h2 {
