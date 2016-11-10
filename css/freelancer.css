@@ -201,6 +201,11 @@ section.success {
   }
 }
 
+#prototype {
+    background: #D56385;
+    color: white;
+}
+
 footer {
   color: white;
 }
